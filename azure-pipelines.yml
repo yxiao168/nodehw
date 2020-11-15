@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+- main
 
 variables:
 
@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'ffe46ac1-249e-42b7-83e9-ccf6060144f3'
   
   # Web app name
-  webAppName: 'nodehw6'
+  webAppName: 'nodehw8'
   
   # Environment name
-  environmentName: 'nodehw6'
+  environmentName: 'nodehw8'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -68,7 +68,7 @@ stages:
         deploy:
           steps:            
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: nodehw6'
+            displayName: 'Azure Web App Deploy: nodehw8'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
